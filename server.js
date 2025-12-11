@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const reports = require("./_report");
-const auth = require("./auth");
+const { router: auth } = require("./auth");
 const db = require("./_db");
 
 // CORS Configuration
